@@ -9,7 +9,7 @@ import App from './App.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}>
+    <GoogleOAuthProvider clientId="508976209503-5drdocms4amtm8bmm5uk692p8bd7ksmp.apps.googleusercontent.com">
         <Provider store={store}>
             <BrowserRouter>
                 <App />
