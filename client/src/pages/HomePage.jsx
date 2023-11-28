@@ -11,18 +11,18 @@ import { convertNumberToString, dateToString } from '../utils/converter'
 import { loader, plus } from '../assets'
 
 const HomePage = () => {
-    const [user, setUser] = useState(
-        JSON.parse(localStorage.getItem('profile'))
-    )
+    const [user] = useState(JSON.parse(localStorage.getItem('profile')))
+
     const activeTab = useSelector((state) => state.page.tab)
     const loading = useSelector((state) => state.todo.loading)
     const todoList = useSelector((state) => state.todo.todoList)
+
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
     useEffect(() => {
         dispatch(getAllTodo(user))
-    }, [])
+    }, [dispatch, user])
 
     let todoListByTab = useMemo(() => {
         let today = new Date()

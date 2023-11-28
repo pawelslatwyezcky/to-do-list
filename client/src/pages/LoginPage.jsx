@@ -1,4 +1,3 @@
-import React from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 
 import { background } from '../assets'
@@ -24,7 +23,7 @@ const LoginPage = () => {
                         <h2 className="mb-4 text-center font-mont text-2xl font-black uppercase tracking-wide lg:text-5xl">
                             Manage your{' '}
                             <span className="break-keep font-sans text-[#ff943b]">
-                                to—do's
+                                to—do&apos;s
                             </span>{' '}
                             another way!
                         </h2>
@@ -67,8 +66,8 @@ const LoginPage = () => {
                                 </h3>
                                 <p>
                                     <strong>Sign up</strong> now and take
-                                    control of your tasks. Let's make every day
-                                    a productive day with{' '}
+                                    control of your tasks. Let&apos;s make every
+                                    day a productive day with{' '}
                                     <strong className="font-sans text-[#ff943b]">
                                         to—do list
                                     </strong>
@@ -83,6 +82,7 @@ const LoginPage = () => {
                     <a
                         href="https://dribbble.com/ikerfernandez"
                         target="_blank"
+                        rel="noreferrer"
                         className="hover:opacity-60"
                     >
                         Iker Fernandez
