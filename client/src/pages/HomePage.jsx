@@ -111,7 +111,7 @@ const HomePage = () => {
                             </div>
                         ) : todoListByTab.length === 0 ? (
                             <div
-                                className={`mb-5 flex h-28 w-full cursor-pointer overflow-hidden rounded-md shadow-xl transition hover:brightness-110 md:w-4/5`}
+                                className={`mb-5 flex h-28 w-full cursor-pointer overflow-hidden rounded-md shadow-xl transition hover:brightness-110 lg:w-4/5`}
                                 onClick={() => navigate('/todo/create')}
                             >
                                 <div className="flex h-full w-1/3 items-center justify-center bg-gray-600/60">
