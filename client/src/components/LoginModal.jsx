@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { useGoogleLogin } from '@react-oauth/google'
@@ -213,7 +213,7 @@ const LoginModal = () => {
                         )}
                         {isSignIn && (
                             <div className="mt-2 text-xs">
-                                Don't have an account?{' '}
+                                Don&apos;t have an account?{' '}
                                 <span
                                     className="cursor-pointer underline hover:text-gray-700/50"
                                     onClick={() => {

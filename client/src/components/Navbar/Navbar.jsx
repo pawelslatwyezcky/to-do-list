@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { AnimatePresence, motion } from 'framer-motion'
 
@@ -81,28 +81,24 @@ const Navbar = () => {
                                     exit={{ opacity: 0 }}
                                 >
                                     <MenuItem
-                                        setShowMenu={setShowMenu}
                                         menuRef={menuRef}
                                         title="Home"
                                         path="/todo"
                                     />
                                     <hr className="my-1" />
                                     <MenuItem
-                                        setShowMenu={setShowMenu}
                                         menuRef={menuRef}
                                         title="Add to—do"
                                         path="/todo/create"
                                     />
                                     <hr className="my-1" />
                                     <MenuItem
-                                        setShowMenu={setShowMenu}
                                         menuRef={menuRef}
                                         title="All to—do"
                                         path="/todo/all"
                                     />
                                     <hr className="my-1" />
                                     <MenuItem
-                                        setShowMenu={setShowMenu}
                                         menuRef={menuRef}
                                         title="Logout"
                                         path="/"

@@ -1,4 +1,3 @@
-import React from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 
 import { search, leftarrow, plus } from '../assets'

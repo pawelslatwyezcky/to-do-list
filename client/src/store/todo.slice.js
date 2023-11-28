@@ -17,7 +17,7 @@ export const todoSlice = createSlice({
             localStorage.setItem(
                 'todoList',
                 JSON.stringify({
-                    data: [...action?.payload],
+                    data: [...action.payload],
                 })
             )
             return {

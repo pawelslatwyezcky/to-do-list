@@ -1,8 +1,8 @@
 import { countDiffInDays } from '../utils/converter'
 import checkedBox from '../assets/checkBoxChecked.svg'
 import uncheckedBox from '../assets/checkBoxUnchecked.svg'
-import { useEffect, useState } from 'react'
-import { AnimatePresence, motion, useIsPresent } from 'framer-motion'
+import { useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
 import sport from '../assets/sport.svg'
 import hobby from '../assets/hobby.svg'
 import home from '../assets/home.svg'
@@ -25,9 +25,7 @@ const areaIcons = {
 const Todo = ({
     todo: { _id, title, image, deadline, importance, area, done },
 }) => {
-    const [user, setUser] = useState(
-        JSON.parse(localStorage.getItem('profile'))
-    )
+    const [user] = useState(JSON.parse(localStorage.getItem('profile')))
     const [status, setStatus] = useState(done)
     const [remove, setRemove] = useState(false)
     const today = new Date()

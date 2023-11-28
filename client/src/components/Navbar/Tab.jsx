@@ -1,4 +1,3 @@
-import React from 'react'
 import { useDispatch } from 'react-redux'
 import { setTab } from '../../store/page.slice'
 import { Link } from 'react-router-dom'
