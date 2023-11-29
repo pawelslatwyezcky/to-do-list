@@ -72,7 +72,7 @@ const HomePage = () => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
             >
-                <div className="relative my-8 flex w-full flex-col items-center font-mont text-xl font-bold md:my-auto md:h-[calc(100vh-4rem)] md:w-1/2 md:flex-row md:text-5xl lg:pl-24">
+                <div className="relative my-8 flex w-full flex-col items-center font-mont text-xl font-bold md:my-auto md:h-[calc(100vh-7rem)] md:w-1/2 md:flex-row md:text-5xl lg:pl-24">
                     <div>
                         Hello, {user.result.name},&nbsp;
                         <br className="hidden md:block" />
@@ -94,7 +94,7 @@ const HomePage = () => {
                 </div>
 
                 <div
-                    className="relative h-[70vh] max-h-[calc(100vh-4rem)] min-h-[7rem] w-full overflow-scroll md:h-full md:w-1/2"
+                    className="relative h-[70vh] max-h-[calc(100vh-7rem)] min-h-[7rem] w-full overflow-scroll md:h-full md:w-1/2"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}

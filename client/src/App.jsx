@@ -48,7 +48,7 @@ function App() {
     }, [location])
 
     return (
-        <div className="flex h-[100vh] max-h-[100vh] w-full overflow-hidden">
+        <div className="flex h-[100vh] max-h-[100vh] w-full overflow-scroll">
             <LeftSideBar />
             <div className="relative m-5 flex w-full flex-col">
                 <Navbar />
