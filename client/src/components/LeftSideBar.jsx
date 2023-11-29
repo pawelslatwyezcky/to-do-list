@@ -7,7 +7,7 @@ const LeftSideBar = () => {
     const navigate = useNavigate()
 
     return (
-        <div className="left-0 top-0 flex min-h-full w-[3rem] flex-col items-center bg-gray-100 md:w-[5rem]">
+        <div className="sticky left-0 top-0 flex min-h-full w-[3rem] flex-col items-center bg-gray-100 md:w-[5rem]">
             {location.pathname === '/todo' && (
                 <>
                     <img
