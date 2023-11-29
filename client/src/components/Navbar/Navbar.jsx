@@ -21,7 +21,7 @@ const Navbar = () => {
     const menuRef = useRef()
 
     return (
-        <div className="sticky top-0 z-[100] m-1 flex w-full justify-between bg-white md:m-5">
+        <div className="sticky top-0 z-[5] m-1 flex w-full justify-between bg-white md:m-5">
             <div className="flex w-2/5 items-center md:w-1/3">
                 <h1
                     className="cursor-pointer font-sans text-lg font-black tracking-wide text-gray-600 transition-all ease-in hover:opacity-70 md:ml-14 md:text-2xl"

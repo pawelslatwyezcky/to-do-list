@@ -53,7 +53,7 @@ const LoginModal = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-gray-600/50"
+                    className="absolute left-0 top-0 z-10 flex h-full w-full items-center justify-center bg-gray-600/50"
                     onClick={() => dispatch(closeModal())}
                 >
                     <div
